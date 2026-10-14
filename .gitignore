@@ -3,3 +3,13 @@
 local.properties
 **/build/
 *.iml
+server/data/
+server/.env
+**/__pycache__/
+.venv/
+
+**/.venv/
+server/data/
+*.sqlite*
+**/.env
+**/uploads/

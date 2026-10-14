@@ -1,0 +1,6 @@
+{$PROMATH_DOMAIN} {
+    request_body {
+        max_size 512MB
+    }
+    reverse_proxy api:8080
+}

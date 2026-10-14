@@ -30,7 +30,14 @@ val CardShape = RoundedCornerShape(10.dp)
 @Composable fun PromathTheme(content: @Composable () -> Unit) {
     MaterialTheme(colorScheme = darkColorScheme(primary = Color.White, onPrimary = Ink,
         background = Ink, onBackground = Color.White, surface = Color(0xFF171717), onSurface = Color.White,
-        secondary = Muted, onSecondary = Ink, outline = Line, onSurfaceVariant = Muted)) {
+        secondary = Muted, onSecondary = Ink, outline = Line, onSurfaceVariant = Muted,
+        primaryContainer = Color(0xFF282828), onPrimaryContainer = Color.White,
+        secondaryContainer = Color(0xFF242424), onSecondaryContainer = Color.White,
+        tertiary = Color.White, onTertiary = Ink, tertiaryContainer = Color(0xFF282828), onTertiaryContainer = Color.White,
+        surfaceVariant = Color(0xFF242424), surfaceContainer = Color(0xFF171717),
+        surfaceContainerHigh = Color(0xFF202020), surfaceContainerHighest = Color(0xFF282828),
+        surfaceContainerLow = Color(0xFF121212), surfaceContainerLowest = Ink,
+        error = Color(0xFFE0E0E0), onError = Ink)) {
         Surface(Modifier.fillMaxSize(), color = Ink, contentColor = Color.White, content = content)
     }
 }
